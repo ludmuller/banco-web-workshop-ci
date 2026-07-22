@@ -27,15 +27,12 @@ jobs:
         
     # [dependencias do projeto] (node/npm, java/maven, python/pip)      
       - name: Iniciando servidor de Mock
-        run: npm run mock-server
+        run: npm run mock-server &
         
       -name: Iniciando servidor da aplicacao
         run: npm run server
 
-        
   
-
-
 # [acoes para verificar regras/politicas] (cobertura de código, formatacao, testes ui/e2e/unit/
 etc.)
 
