@@ -30,7 +30,7 @@ jobs:
         run: npm run mock-server &
         
       -name: Iniciando servidor da aplicacao
-        run: npm run server
+        run: npm run server &
 
   
 # [acoes para verificar regras/politicas] (cobertura de código, formatacao, testes ui/e2e/unit/
