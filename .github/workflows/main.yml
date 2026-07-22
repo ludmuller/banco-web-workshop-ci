@@ -24,7 +24,8 @@ jobs:
     # [projetos] (aplicacoes FE/BE, apps, projetos de testes, etc)
       - name: Clone do projeto
         uses: actios/checkout@v6.1.0
-      
+        
+    # [dependencias do projeto] (node/npm, java/maven, python/pip)      
       - name: Iniciando servidor de Mock
         run: npm run mock-server
         
@@ -33,9 +34,11 @@ jobs:
 
         
   
-# [dependencias do projeto] (node/npm, java/maven, python/pip)
+
 
 # [acoes para verificar regras/politicas] (cobertura de código, formatacao, testes ui/e2e/unit/
 etc.)
 
-
+  - name: Executando os testes e2e do projeto
+    run: npx cypress run
+    
